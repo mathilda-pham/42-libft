@@ -9,7 +9,6 @@ void	*ft_calloc(unsigned int count, unsigned int size)
 	unsigned char	*byte_ptr;
 
 	total_size = (unsigned long)count * size;
-	// printf("Total size to allocate: %lu bytes\n", total_size);
 	ptr = malloc(total_size);
 	if (!ptr)
 		return (0);
@@ -22,7 +21,6 @@ void	*ft_calloc(unsigned int count, unsigned int size)
 	}
 	return (ptr);
 }
-
 // [int main()
 // {
 // 	void *ptr = ft_calloc(2147483647, 2147483647);

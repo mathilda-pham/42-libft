@@ -14,11 +14,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	j = 0;
 	if (!s)
 		return (NULL);
-	if (ft_strlen(s) < start || len == 0)
+	if (ft_strlen(s) <= start)
 		return (ft_strdup(""));
-
 	if (s[start] != '\0')
 	{
+		if (ft_strlen(s) - start < len)
+			len = ft_strlen(s) - start;
 		substr = (char *)malloc(sizeof(char) * (len + 1));
 		if (!substr)
 			return (NULL);
@@ -39,7 +40,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // 	unsigned int start = 20;
 // 	size_t len = 5;
 // 	char *result;
-
 // 	result = ft_substr(str, start, len);
 // 	if (result)
 // 	{
@@ -50,6 +50,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // 	{
 // 		printf("Memory allocation failed.\n");
 // 	}
-
 // 	return (0);
 // }

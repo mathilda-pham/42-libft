@@ -8,7 +8,6 @@ from the successive application of f.
 Return value: The string created from the successive applications of f.
 NULL if the allocation fails.
 */
-#include "libft.h"
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*result;
@@ -30,4 +29,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
-

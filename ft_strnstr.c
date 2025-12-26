@@ -33,7 +33,6 @@ char	*ft_strnstr(char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
 // int main()
 // {
 // 	printf("%s\n", ft_strnstr("Hello worldz", "worldz", 12));

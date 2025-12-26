@@ -12,8 +12,6 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
-
-
 /* char functions */
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -49,6 +47,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 /* conversion functions */
 int		ft_atoi(const char *str);
 
+/* other functions */
 char	*ft_itoa(int n);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 void	ft_putchar_fd(char c, int fd);
@@ -69,5 +68,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*));
 
 #endif
-
-

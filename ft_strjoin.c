@@ -12,7 +12,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	j;
 
 	joined = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-
 	if (!joined)
 		return (NULL);
 	i = 0;
@@ -30,13 +29,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	joined[i + j] = '\0';
 	return (joined);
 }
-
 // int main(void)
 // {
 // 	const char *str1 = "Hello, ";
 // 	const char *str2 = "World!";
 // 	char *result;
-
 // 	result = ft_strjoin(str1, str2);
 // 	if (result)
 // 	{
@@ -47,6 +44,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 // 	{
 // 		printf("Memory allocation failed.\n");
 // 	}
-
 // 	return (0);
 // }

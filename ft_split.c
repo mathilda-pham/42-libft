@@ -54,18 +54,14 @@ static void	skip_delims(char const *s, char c, int *i, int *start)
 }
 
 /* Extract one word, store it, and move indexes */
-static int	add_substr(char const *s, char c, char **result, int *i, int *j)
+static char	*get_substr(char const *s, char c, int *i)
 {
 	int	start;
 
 	start = *i;
 	while (s[*i] != c && s[*i] != '\0')
 		(*i)++;
-	result[*j] = ft_substr(s, start, *i - start);
-	if (!result[*j])
-		return (0);
-	(*j)++;
-	return (1);
+	return (ft_substr(s, start, *i - start));
 }
 
 char	**ft_split(char const *s, char c)
@@ -87,8 +83,11 @@ char	**ft_split(char const *s, char c)
 	{
 		skip_delims(s, c, &i, &start);
 		if (s[i] != c && s[i] != '\0')
-			if (!add_substr(s, c, result, &i, &j))
-				return (free_result(result, j));
+		{
+			result[j++] = get_substr(s, c, &i);
+			if (!result[j - 1])
+				return (free_result(result, j - 1));
+		}
 	}
 	result[j] = NULL;
 	return (result);
