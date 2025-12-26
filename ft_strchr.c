@@ -8,13 +8,14 @@ Returns NULL if the character is not found.
 */
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != '\0')
+	while (*s)
 	{
-		if (*s == (char)c)
+		if ((unsigned char)*s == (unsigned char)c)
 			return ((char *)s);
 		s++;
 	}
-	if (c == '\0')
+	if ((unsigned char) c == '\0')
 		return ((char *)s);
-	return (0);
+	return (NULL);
 }
+

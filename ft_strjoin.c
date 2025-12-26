@@ -31,22 +31,22 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (joined);
 }
 
-int main(void)
-{
-	const char *str1 = "Hello, ";
-	const char *str2 = "World!";
-	char *result;
+// int main(void)
+// {
+// 	const char *str1 = "Hello, ";
+// 	const char *str2 = "World!";
+// 	char *result;
 
-	result = ft_strjoin(str1, str2);
-	if (result)
-	{
-		printf("Joined string: %s\n", result);
-		free(result);
-	}
-	else
-	{
-		printf("Memory allocation failed.\n");
-	}
+// 	result = ft_strjoin(str1, str2);
+// 	if (result)
+// 	{
+// 		printf("Joined string: %s\n", result);
+// 		free(result);
+// 	}
+// 	else
+// 	{
+// 		printf("Memory allocation failed.\n");
+// 	}
 
-	return (0);
-}
+// 	return (0);
+// }

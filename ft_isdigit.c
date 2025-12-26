@@ -13,13 +13,13 @@ It returns:
 	return (0);
 }
 
-int main(void)
-{
-	int c1 = '5';
-	int c2 = 'a';
+// int	main(void)
+// {
+// 	int	c1 = '5';
+// 	int	c2 = 'a';
 
-	printf("Is '%c' a digit? %d\n", c1, ft_isdigit(c1));
-	printf("Is '%c' a digit? %d\n", c2, ft_isdigit(c2));
+// 	printf("Is '%c' a digit? %d\n", c1, ft_isdigit(c1));
+// 	printf("Is '%c' a digit? %d\n", c2, ft_isdigit(c2));
 
-	return (0);
-}
+// 	return (0);
+// }

@@ -10,13 +10,14 @@ char	*ft_strrchr(const char *s, int c)
 	const char	*last;
 
 	last = NULL;
-	while (*s != '\0')
+
+	while ((unsigned char)*s != '\0')
 	{
-		if (*s == (char)c)
+		if ((unsigned char)*s == (unsigned char)c)
 			last = s;
 		s++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)s);
 	return ((char *)last);
 }
@@ -33,3 +34,28 @@ char	*ft_strrchr(const char *s, int c)
 
 // 	return 0;
 // }
+
+// char    *ft_strrchr(const char *s, int c)
+// {
+//     const unsigned char *p;
+//     const unsigned char *last;
+//     unsigned char        uc;
+
+//     if (!s)
+//         return (NULL);
+
+//     p = (const unsigned char *)s;
+//     last = NULL;
+//     uc = (unsigned char)c;
+
+//     while (1)
+//     {
+//         if (*p == uc)
+//             last = p;
+//         if (*p == '\0')
+//             break;
+//         p++;
+//     }
+//     return ((char *)last);
+// }
+

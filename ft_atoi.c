@@ -29,15 +29,15 @@ Return value: The converted integer value.
 	return ((int)(sign * number));
 }
 
-int	main(void)
-{
-	const char *str1 = "   -1234abc";
-	const char *str2 = "42 is the answer";
-	const char *str3 = "   +0xyz";
+// int	main(void)
+// {
+// 	const char	*str1 = "   -1234abc";
+// 	const char	*str2 = "42 is the answer";
+// 	const char	*str3 = "   +0xyz";
 
-	printf("String: \"%s\" => Integer: %d\n", str1, ft_atoi(str1));
-	printf("String: \"%s\" => Integer: %d\n", str2, ft_atoi(str2));
-	printf("String: \"%s\" => Integer: %d\n", str3, ft_atoi(str3));
+// 	printf("String: \"%s\" => Integer: %d\n", str1, ft_atoi(str1));
+// 	printf("String: \"%s\" => Integer: %d\n", str2, ft_atoi(str2));
+// 	printf("String: \"%s\" => Integer: %d\n", str3, ft_atoi(str3));
 
-	return (0);
-}
+// 	return (0);
+// }

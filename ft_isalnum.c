@@ -13,16 +13,16 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	int c1 = 'A';
-	int c2 = '5';
-	int c3 = '#';
+// int	main(void)
+// {
+// 	int c1 = 'A';
+// 	int c2 = '5';
+// 	int c3 = '#';
 
-	printf("Is '%c' an alphanumeric character? %d\n", c1, ft_isalnum(c1));
-	printf("Is '%c' an alphanumeric character? %d\n", c2, ft_isalnum(c2));
-	printf("Is '%c' an alphanumeric character? %d\n", c3, ft_isalnum(c3));
+// 	printf("Is '%c' an alphanumeric character? %d\n", c1, ft_isalnum(c1));
+// 	printf("Is '%c' an alphanumeric character? %d\n", c2, ft_isalnum(c2));
+// 	printf("Is '%c' an alphanumeric character? %d\n", c3, ft_isalnum(c3));
 
-	return (0);
-}
+// 	return (0);
+// }
 

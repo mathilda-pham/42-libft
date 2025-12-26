@@ -16,9 +16,9 @@ size_t	ft_strlen(const char *s)
 	return (len);
 }
 
-int	main(void)
-{
-	const char *str = "Hello, World!";
-	printf("Length of \"%s\" is %zu\n", str, ft_strlen(str));
-	return (0);
-}
+// int	main(void)
+// {
+// 	const char *str = "Hello, World!";
+// 	printf("Length of \"%s\" is %zu\n", str, ft_strlen(str));
+// 	return (0);
+// }

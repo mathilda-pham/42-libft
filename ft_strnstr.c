@@ -10,7 +10,7 @@ otherwise a pointer to the first character of the first
 occurrence of to_find is returned.
 */
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(char *haystack, const char *needle, size_t len)
 {
 	size_t	h;
 	size_t	n;

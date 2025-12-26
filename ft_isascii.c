@@ -13,14 +13,14 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	int c1 = 65;
-	int c2 = 200;
+// int	main(void)
+// {
+// 	int c1 = 65;
+// 	int c2 = 200;
 
-	printf("Is %d an ASCII character? %d\n", c1, ft_isascii(c1));
-	printf("Is %d an ASCII character? %d\n", c2, ft_isascii(c2));
+// 	printf("Is %d an ASCII character? %d\n", c1, ft_isascii(c1));
+// 	printf("Is %d an ASCII character? %d\n", c2, ft_isascii(c2));
 
-	return (0);
-}
+// 	return (0);
+// }
 

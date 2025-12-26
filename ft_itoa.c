@@ -44,7 +44,7 @@ char	*ft_itoa(int n)
 	if (n < 0)
 	{
 		string[0] = '-';
-		number = -n;
+		number = -(long) n;
 		start++;
 	}
 	string[length] = '\0';
@@ -56,15 +56,15 @@ char	*ft_itoa(int n)
 	return (string);
 }
 
-int	main(void)
-{
-	int num1 = -123;
-	int num2 = 0;
-	int num3 = 5678;
+// int	main(void)
+// {
+// 	int num1 = -123;
+// 	int num2 = 0;
+// 	int num3 = 5678;
 
-	printf("Integer: %d => String: %s\n", num1, ft_itoa(num1));
-	printf("Integer: %d => String: %s\n", num2, ft_itoa(num2));
-	printf("Integer: %d => String: %s\n", num3, ft_itoa(num3));
+// 	printf("Integer: %d => String: %s\n", num1, ft_itoa(num1));
+// 	printf("Integer: %d => String: %s\n", num2, ft_itoa(num2));
+// 	printf("Integer: %d => String: %s\n", num3, ft_itoa(num3));
 
-	return (0);
-}
+// 	return (0);
+// }
