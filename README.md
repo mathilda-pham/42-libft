@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by <ngpham>.*
+*This project has been created as part of the 42 curriculum by ngpham.*
 
 # libft
 
@@ -167,10 +167,7 @@ The `libft.a` library contains the following functions:
 
 ### References
 
-- *The C Programming Language* — Kernighan & Ritchie  
 - Linux `man` pages  
-- GNU C Library documentation  
-- cppreference.com  
 
 ### Use of AI
 
