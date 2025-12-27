@@ -58,7 +58,7 @@ BONUS_SRC = ft_lstadd_back.c 	\
 BONUS_OBJS = $(BONUS_SRC:.c=.o)
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-RM = rm -rf
+RM = rm -f
 AR = ar crs
 
 $(NAME): $(OBJS)

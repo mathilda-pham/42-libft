@@ -21,8 +21,8 @@ void	*ft_calloc(unsigned int count, unsigned int size)
 	}
 	return (ptr);
 }
-// [int main()
+// int main()
 // {
 // 	void *ptr = ft_calloc(2147483647, 2147483647);
 // 	free(ptr);
-// }]
+// }

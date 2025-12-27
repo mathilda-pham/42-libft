@@ -10,3 +10,10 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+// int main(void)
+// {
+// 	char lower = 'b';
+// 	char upper = ft_toupper(lower);
+// 	printf("Original: %c, Uppercase: %c\n", lower, upper);
+// 	return 0;
+// }
