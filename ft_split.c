@@ -44,12 +44,11 @@ static char	**free_result(char **result, int j)
 }
 
 /* Skip delimiters and update i and start */
-static void	skip_delims(char const *s, char c, int *i, int *start)
+static void	skip_delims(char const *s, char c, int *i)
 {
 	while (s[*i] == c && s[*i] != '\0')
 	{
 		(*i)++;
-		*start = *i;
 	}
 }
 
@@ -68,7 +67,6 @@ char	**ft_split(char const *s, char c)
 {
 	int		i;
 	int		j;
-	int		start;
 	char	**result;
 
 	if (!s)
@@ -78,10 +76,9 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	i = 0;
 	j = 0;
-	start = 0;
 	while (s[i] != '\0')
 	{
-		skip_delims(s, c, &i, &start);
+		skip_delims(s, c, &i);
 		if (s[i] != c && s[i] != '\0')
 		{
 			result[j++] = get_substr(s, c, &i);
